@@ -16,7 +16,7 @@ import {
 import { Link } from "react-router-dom";
 import "./home.css";
 import image from "../images/img.jpeg";
-import about from "../images/about.jpeg";
+import about from "../images/about.jpg";
 import { motion } from "framer-motion";
 import { IoMdSend } from "react-icons/io";
 
