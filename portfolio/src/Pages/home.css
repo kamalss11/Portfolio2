@@ -1,0 +1,137 @@
+.nav-bar {
+  padding: 20px 100px;
+  border-bottom: 1px solid rgb(202 202 202);
+}
+
+.nav-links {
+  margin: 0 15px;
+  color: grey;
+  transition: 0.2s;
+}
+
+.nav-links:hover {
+  color: black;
+  font-weight: bold;
+}
+
+.banner-container {
+  height: calc(100vh - 71px);
+}
+
+.image {
+  text-align: center;
+}
+
+.image img {
+  padding: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid black;
+}
+
+.info {
+  line-height: 29px;
+  text-align: justify;
+}
+
+.info .title {
+  line-height: 35px;
+}
+
+.info .short-info {
+  margin-top: 10px;
+}
+
+.info .links {
+  margin: 20px 0;
+}
+
+.info .links a {
+  margin-right: 30px;
+  font-size: 19px;
+  color: black;
+}
+
+.about-container {
+  margin-bottom: 140px;
+}
+
+.about-img {
+  text-align: center;
+}
+
+.about-img img {
+  width: 250px;
+  height: 450px;
+}
+
+.about-info p {
+  line-height: 35px;
+  text-align: justify;
+  font-size: 17px;
+}
+
+.tech-container {
+  margin-bottom: 100px;
+}
+
+.tech-container .icons {
+  font-size: 45px;
+}
+
+.footer-container {
+  padding: 20px;
+  border-top: 1px solid rgb(202 202 202);
+  text-align: center;
+  line-height: 40px;
+}
+
+.footer-icons {
+  margin: 0 10px;
+  color: black;
+  font-size: 20px;
+}
+
+.MuiTextField-root {
+  width: 100% !important;
+  margin-bottom: 30px !important;
+  border-radius: 0 !important ;
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input,
+.css-66dh3a-MuiInputBase-input-MuiInput-input {
+  padding: 15px 20px 20px !important;
+}
+
+.css-1eed5fa-MuiInputBase-root-MuiInput-root::before,
+.css-1eed5fa-MuiInputBase-root-MuiInput-root::after,
+.css-uhyr2s-MuiInputBase-root-MuiInput-root::before,
+.css-uhyr2s-MuiInputBase-root-MuiInput-root::after {
+  border-bottom: 1px solid rgb(135 132 132 / 93%) !important;
+}
+
+.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
+  color: rgb(135 132 132 / 93%) !important;
+}
+
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root,
+.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+  color: rgba(255, 255, 255, 0.726) !important;
+}
+
+.css-1x51dt5-MuiInputBase-input-MuiInput-input,
+.css-66dh3a-MuiInputBase-input-MuiInput-input {
+  color: white !important ;
+}
+
+@media only screen and (max-width: 1199.5px) {
+  .info .title {
+    text-align: center;
+  }
+
+  .info .links {
+    text-align: center;
+  }
+}
