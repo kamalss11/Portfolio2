@@ -105,19 +105,15 @@
   padding: 15px 20px 20px !important;
 }
 
-.css-1eed5fa-MuiInputBase-root-MuiInput-root::before,
-.css-1eed5fa-MuiInputBase-root-MuiInput-root::after,
-.css-uhyr2s-MuiInputBase-root-MuiInput-root::before,
-.css-uhyr2s-MuiInputBase-root-MuiInput-root::after {
+.MuiInputBase-root::before,
+.MuiInputBase-root::after,
+.MuiInputBase-inputMultiline::before,
+.MuiInputBase-inputMultiline::after {
   border-bottom: 1px solid rgb(135 132 132 / 93%) !important;
 }
 
-.css-aqpgxn-MuiFormLabel-root-MuiInputLabel-root {
-  color: rgb(135 132 132 / 93%) !important;
-}
-
-.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root,
-.css-1c2i806-MuiFormLabel-root-MuiInputLabel-root.Mui-focused {
+.MuiFormLabel-root,
+.MuiFormLabel-root.Mui-focused {
   color: rgba(255, 255, 255, 0.726) !important;
 }
 

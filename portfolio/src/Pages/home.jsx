@@ -29,7 +29,9 @@ export default function Home() {
     message: "",
   });
 
-  function handleChange(name, value) {}
+  function handleForm(name, value) {
+    setFormData({ ...formData, [name]: value });
+  }
 
   return (
     <React.Fragment>
@@ -226,19 +228,23 @@ export default function Home() {
               <Grid container spacing={1}>
                 <Grid item xs={12} lg={6}>
                   <TextField
+                    className="inputField"
                     id="standard-basic"
                     label="Name *"
                     value={formData["name"]}
-                    variant="standard" 
+                    onChange={(e) => handleForm("name", e.target.value)}
+                    variant="standard"
                   />
                 </Grid>
 
                 <Grid item xs={12} md={12} lg={6}>
                   <TextField
+                    className="inputField"
                     id="standard-basic"
                     type={"email"}
                     label="Email *"
                     value={formData["email"]}
+                    onChange={(e) => handleForm("email", e.target.value)}
                     variant="standard"
                   />
                 </Grid>
@@ -246,27 +252,33 @@ export default function Home() {
               <Grid container spacing={1}>
                 <Grid item xs={12} md={12} lg={6}>
                   <TextField
+                    className="inputField"
                     id="standard-basic"
                     label="Subject *"
                     value={formData["subject"]}
+                    onChange={(e) => handleForm("subject", e.target.value)}
                     variant="standard"
                   />
                 </Grid>
                 <Grid item xs={12} lg={6}>
                   <TextField
+                    className="inputField"
                     id="standard-basic"
                     label="Phone Number *"
                     value={formData["phone_number"]}
+                    onChange={(e) => handleForm("phone_number", e.target.value)}
                     variant="standard"
                   />
                 </Grid>
               </Grid>
               <TextField
+                className="inputField"
                 id="standard-basic"
                 multiline
                 label="Message *"
                 rows={1}
                 value={formData["message"]}
+                onChange={(e) => handleForm("message", e.target.value)}
                 variant="standard"
               />
 
