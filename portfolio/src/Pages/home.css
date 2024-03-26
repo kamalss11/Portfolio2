@@ -100,8 +100,7 @@
   border-radius: 0 !important ;
 }
 
-.css-1x51dt5-MuiInputBase-input-MuiInput-input,
-.css-66dh3a-MuiInputBase-input-MuiInput-input {
+.MuiInputBase-input {
   padding: 15px 20px 20px !important;
 }
 
