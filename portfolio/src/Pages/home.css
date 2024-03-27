@@ -138,6 +138,7 @@
 
 .tech-container .icons {
   font-size: 45px;
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
 
 .footer-container {
@@ -197,6 +198,12 @@
   }
 }
 
+@media (max-width: 650px){
+  .about-info p{
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 750px) {
   .hamburger {
     display: flex;
@@ -209,10 +216,10 @@
   .links.active {
     display: flex !important;
     position: absolute !important;
-    top: 79px !important;
+    top: 78px !important;
     left: 0 !important;
     width: 100% !important;
-    height: calc(100vh - 80px) !important;
+    height: calc(100vh - 78px) !important;
     background: white !important;
     flex-direction: column !important;
     justify-content: flex-start !important;
@@ -221,6 +228,13 @@
 
   .links.active .nav-links {
     margin: 10px;
+  }
+
+  .links.active .nav-links:last-child {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
   }
 }
 
