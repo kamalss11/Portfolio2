@@ -11,10 +11,10 @@ import { RiInstagramFill } from "react-icons/ri";
 
 export function getNavbarDetails() {
   return [
-    { name: "Home", url: "/home" },
-    { name: "About", url: "/about" },
-    { name: "Projects", url: "/projects" },
-    { name: "Contact", url: "/contact" },
+    { name: "Home", url: "#home" },
+    { name: "About", url: "#about" },
+    { name: "Projects", url: "#projects" },
+    { name: "Contact", url: "#contact" },
   ];
 }
 

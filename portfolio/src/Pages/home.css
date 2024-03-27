@@ -1,21 +1,80 @@
 .nav-bar {
   padding: 20px 100px;
   border-bottom: 1px solid rgb(202 202 202);
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  transition: 0.5s;
+}
+
+.nav-bar.active {
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .nav-links {
   margin: 0 15px;
   color: grey;
+  cursor: pointer;
   transition: 0.2s;
 }
 
-.nav-links:hover {
+.nav-links:hover,
+.nav-links.active {
   color: black;
   font-weight: bold;
 }
 
+.hamburger {
+  display: none;
+  flex-direction: column;
+  width: 50px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background: black;
+  border-radius: 10px;
+  height: 3px;
+  margin: 0 0 5px;
+  transition: 0.2s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.hamburger span:nth-of-type(1) {
+  width: 50%;
+}
+
+.hamburger span:nth-of-type(2) {
+  width: 100%;
+}
+
+.hamburger span:nth-of-type(3) {
+  width: 75%;
+}
+
+.hamburger.active span:nth-of-type(1) {
+  transform-origin: bottom;
+  width: 32%;
+  transform: rotatez(45deg) translate(3px, 0px);
+}
+
+.hamburger.active span:nth-of-type(2) {
+  transform-origin: top;
+  width: 60%;
+  transform: rotatez(-45deg);
+}
+
+.hamburger.active span:nth-of-type(3) {
+  transform-origin: bottom;
+  width: 34%;
+  transform: translate(12px, -4px) rotatez(45deg);
+}
+
 .banner-container {
   height: calc(100vh - 71px);
+  overflow-x: hidden;
 }
 
 .image {
@@ -96,7 +155,7 @@
 
 .MuiTextField-root {
   width: 100% !important;
-  margin-bottom: 30px !important;
+  margin-bottom: 25px !important;
   border-radius: 0 !important ;
 }
 
@@ -117,6 +176,11 @@
   color: rgba(255, 255, 255, 0.726) !important;
 }
 
+.MuiFormHelperText-root {
+  color: #f46060e0 !important;
+  padding: 10px 10px 0 !important;
+}
+
 @media only screen and (max-width: 1199.5px) {
   .info .title {
     text-align: center;
@@ -124,5 +188,44 @@
 
   .info .links {
     text-align: center;
+  }
+}
+
+@media (max-width: 1170.5px) {
+  .nav-bar {
+    padding: 20px 30px !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .links {
+    display: none !important;
+  }
+
+  .links.active {
+    display: flex !important;
+    position: absolute !important;
+    top: 79px !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: calc(100vh - 80px) !important;
+    background: white !important;
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    align-items: center !important;
+  }
+
+  .links.active .nav-links {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .title h1 {
+    font-size: 1.5em;
   }
 }
