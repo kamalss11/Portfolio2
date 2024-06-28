@@ -39,7 +39,7 @@
   border-radius: 10px;
   height: 3px;
   margin: 0 0 5px;
-  transition: 0.2s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  transition: 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
 .hamburger span:nth-of-type(1) {

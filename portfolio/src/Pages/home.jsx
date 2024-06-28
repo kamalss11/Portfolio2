@@ -8,6 +8,7 @@ import {
 } from "@mui/material";
 import React, { useEffect, useRef, useState } from "react";
 import {
+  calculateYearsAndMonths,
   footerIcons,
   getNavbarDetails,
   socialIcons,
@@ -47,6 +48,7 @@ export default function Home() {
     message: "",
     messageErr: "",
   });
+  const startDate = "2022-10-03";
   const [navLinkActive, setNavLinkActive] = useState("home");
   const [isHamActive, setIsHamActive] = useState(false);
   const [navActive, setNavActive] = useState(false);
@@ -225,7 +227,8 @@ export default function Home() {
 
                 <div className="short-info">
                   <p>
-                    An Innovative and detail-oriented Web Developer with 1.5
+                    An Innovative and detail-oriented Web Developer with{" "}
+                    {calculateYearsAndMonths(startDate, new Date())}
                     years of professional experience in creating dynamic,
                     user-friendly & progessive web apps.
                   </p>
@@ -264,25 +267,25 @@ export default function Home() {
               <div className="about-info">
                 <p>
                   Kamalesh S, is an Innovative and detail-oriented Web Developer
-                  with 1.5 years of professional experience in creating dynamic,
-                  user-friendly & progessive web apps. Proficient in front-end
-                  technologies such as HTML5, CSS3, JavaScript, and frameworks
-                  like React.js , Bootstrap and library like Material UI. Up
-                  skilling in back-end development using Node.js. Adopt at
-                  collaborating with cross-functional teams to deliver
-                  high-quality projects on time. Proven track record of
-                  implementing responsive designs for seamless user experiences.
-                  Having problem-solving abilities and a passion for staying
-                  updated with the latest industry trends and technologies. I
-                  work with the team to provide imaginative solutions for our
-                  customers. I'm passionate about developing and learning new
-                  languages. I want to be in the developing world where I can
-                  utilize my skills for the betterment of the organization as
-                  well as the society. My strength is my love towards the
-                  technology and also a person who believes in working hard so
-                  that we may achieve our goals efficiently. Looking forward to
-                  work in different environment so that I could expand my
-                  knowledge
+                  with {calculateYearsAndMonths(startDate, new Date())} years of
+                  professional experience in creating dynamic, user-friendly &
+                  progessive web apps. Proficient in front-end technologies such
+                  as HTML5, CSS3, JavaScript, and frameworks like React.js ,
+                  Bootstrap and library like Material UI. Up skilling in
+                  back-end development using Node.js. Adopt at collaborating
+                  with cross-functional teams to deliver high-quality projects
+                  on time. Proven track record of implementing responsive
+                  designs for seamless user experiences. Having problem-solving
+                  abilities and a passion for staying updated with the latest
+                  industry trends and technologies. I work with the team to
+                  provide imaginative solutions for our customers. I'm
+                  passionate about developing and learning new languages. I want
+                  to be in the developing world where I can utilize my skills
+                  for the betterment of the organization as well as the society.
+                  My strength is my love towards the technology and also a
+                  person who believes in working hard so that we may achieve our
+                  goals efficiently. Looking forward to work in different
+                  environment so that I could expand my knowledge
                 </p>
               </div>
             </Grid>
@@ -356,8 +359,7 @@ export default function Home() {
               It's time to build something exciting !
             </h3>
             <p style={{ lineHeight: "35px" }}>
-              Got a question or feedback ? Contact US !. Here to assist you and
-              ensure your experience with us is the best it can be.
+              Got a question or feedback ? Contact US !.
             </p>
           </Grid>
           <Grid

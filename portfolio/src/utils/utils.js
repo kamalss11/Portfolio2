@@ -48,3 +48,17 @@ export function footerIcons() {
     },
   ];
 }
+
+export function calculateYearsAndMonths(startDate, endDate) {
+  const start = new Date(startDate);
+  const end = new Date(endDate);
+
+  let months = (end.getFullYear() - start.getFullYear()) * 12;
+  months -= start.getMonth() + 1; // +1 because getMonth() is 0-indexed
+  months += end.getMonth();
+
+  const years = Math.floor(months / 12);
+  months = months % 12;
+
+  return `${years}.${months} `;
+}
